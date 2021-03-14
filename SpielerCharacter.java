@@ -28,6 +28,10 @@ public class SpielerCharacter
         this.lebenspunkte = lebenspunkte;
     }
     
+    /**
+     * Hier könnte eine Methoden Beschreibung stehen.
+     */
+    
     public int getLebenspunkte(){
         return lebenspunkte;
     }
