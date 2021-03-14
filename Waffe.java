@@ -2,7 +2,7 @@
 /**
  * Write a description of class Waffe here.
  *
- * @author (your name)
+ * @author dt
  * @version (a version number or a date)
  */
 public class Waffe
