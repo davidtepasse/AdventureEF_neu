@@ -3,7 +3,7 @@
  * Realisiert einen Helden
  *
  * @author dt
- * @version 0.1.1
+ * @version 0.1
  */
 public class Held extends SpielerCharacter
 {

@@ -3,7 +3,7 @@
  * Write a description of class Magier here.
  *
  * @author dt
- * @version 0.1.1
+ * @version 0.1
  */
 public class Magier extends SpielerCharacter
 {
