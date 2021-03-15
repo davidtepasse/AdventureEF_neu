@@ -1,9 +1,9 @@
 
 /**
- * Beschreiben Sie hier die Klasse SpielerCharacter.
+ * Oberklasse aller SpielerCharacter
  * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
+ * @author dt 
+ * @version 0.1
  */
 public class SpielerCharacter
 {
@@ -27,10 +27,6 @@ public class SpielerCharacter
     public void setLebensenpunkte(int lebenspunkte){
         this.lebenspunkte = lebenspunkte;
     }
-    
-    /**
-     * Hier könnte eine Methoden Beschreibung stehen.
-     */
     
     public int getLebenspunkte(){
         return lebenspunkte;
