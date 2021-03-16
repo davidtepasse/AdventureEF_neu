@@ -5,7 +5,7 @@
  * @author dt
  * @version 0.1
  */
-public class Monster
+public class Monster extends Gegner
 {
     // instance variables - replace the example below with your own
     private int lebenspunkte;
@@ -18,6 +18,7 @@ public class Monster
     public Monster(int lebenspunkte, int kampfkraft, String name)
     {
         // initialise instance variables
+        super();
         this.lebenspunkte = lebenspunkte;
         this.kampfkraft = kampfkraft;
         this.name = name;
@@ -28,6 +29,11 @@ public class Monster
      */
     public int berechneKampfkraft() {
         return kampfkraft;
+    }
+    
+    public String getName()
+    {
+        return name;
     }
     
     public int getLebenspunkte(){

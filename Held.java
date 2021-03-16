@@ -11,6 +11,7 @@ public class Held extends SpielerCharacter
     private int vermoegen;
     private int kampfkraft;
     private Waffe waffe;
+    private boolean haeltWaffe;
 
     /**
      * Constructor for objects of class Held
@@ -21,6 +22,7 @@ public class Held extends SpielerCharacter
         super(lebenspunkte, name);
         this.vermoegen = vermoegen;
         this.kampfkraft = kampfkraft;
+        this.haeltWaffe = false;
     }
     
     /**
@@ -28,6 +30,7 @@ public class Held extends SpielerCharacter
      */
     public void waffeAufnehmen(Waffe waffe) {
         this.waffe = waffe;
+        this.haeltWaffe = true;
     }
     
     /**
@@ -35,6 +38,7 @@ public class Held extends SpielerCharacter
      */
     public void waffeAblegen() {
         this.waffe = null;
+        this.haeltWaffe = false;
     }
     
     
@@ -54,8 +58,27 @@ public class Held extends SpielerCharacter
         if (heldenkraft >= monsterkraft) { // held hat gewonnen
             this.kampfkraft++;
             monster.setLebenspunkte(monster.getLebenspunkte()-1);
+            System.out.println("Der Held " + name + " schadet dem Monster " + monster.getName() + ".");
+            System.out.println("Das Monster hat jetzt noch " + monster.getLebenspunkte() + " Lebenspunkte.");
         } else {
             // Held hat verloren.. was tun?
+        }
+    }
+    
+    /**
+     * Der Held lässt seine aktuelle Waffe beim Schmied verbessern. 
+     */
+    
+    public void waffeBeimSchmiedVerbessern(Schmied schmied)
+    {
+        if (haeltWaffe == false)
+        {
+            System.out.println("Ohje ich habe ja gar keine Waffe zum Verbessern.");
+        }
+        else
+        {
+            // Held gibt seine Waffe zum Schmied, um sie zu verbessern 
+            
         }
     }
 }

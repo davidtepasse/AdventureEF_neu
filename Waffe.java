@@ -16,7 +16,7 @@ public class Waffe
     /**
      * Constructor for objects of class Waffe
      */
-    public Waffe(int schaden, int zustand, String name, String Material)
+    public Waffe(int schaden, int zustand, String name, String material)
     {
         // initialise instance variables
         this.name = name;
