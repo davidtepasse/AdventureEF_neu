@@ -32,5 +32,18 @@ public class Waffe
         return schaden * zustand;
     }
     
+    public int getZustand()
+    {   
+        return zustand;
+    }
     
+    public String getName()
+    {
+        return name;
+    }
+    
+    public void setZustand(int neuerZustand)
+    {
+        this.zustand = neuerZustand;
+    }
 }

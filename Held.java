@@ -8,8 +8,7 @@
 public class Held extends SpielerCharacter
 {
     // instance variables - replace the example below with your own
-    private int vermoegen;
-    private int kampfkraft;
+  
     private Waffe waffe;
     private boolean haeltWaffe;
 
@@ -19,9 +18,7 @@ public class Held extends SpielerCharacter
     public Held(int lebenspunkte, int vermoegen, int kampfkraft, String name)
     {
         // initialise instance variables
-        super(lebenspunkte, name);
-        this.vermoegen = vermoegen;
-        this.kampfkraft = kampfkraft;
+        super(lebenspunkte, name, kampfkraft, vermoegen);
         this.haeltWaffe = false;
     }
     
@@ -41,12 +38,27 @@ public class Held extends SpielerCharacter
         this.haeltWaffe = false;
     }
     
+    /** 
+     * Kommentare!
+     */
     
+    public Waffe getWaffe()
+    {
+        return waffe;
+    }
+     
     /**
      * Kommentare!
      */
     public int berechneKampfkraft() {
-        return kampfkraft + waffe.getStaerke();
+        if (haeltWaffe == true)
+        {
+            return kampfkraft + waffe.getStaerke();
+        }
+        else
+        {
+            return kampfkraft;
+        }
     }
     
     /**

@@ -2,7 +2,7 @@
 /**
  * Beschreiben Sie hier die Klasse Gegner.
  * 
- * @author (Ihr Name) 
+ * @author (dt & nw) 
  * @version (eine Versionsnummer oder ein Datum)
  */
 public class Gegner extends Spielfigur 
@@ -12,10 +12,14 @@ public class Gegner extends Spielfigur
     /**
      * Konstruktor für Objekte der Klasse Gegner
      */
-    public Gegner()
+    public Gegner(String name, int lebenspunkte, int kampfkraft)
     {
         // Instanzvariable initialisieren
-        super();
+        super(name, lebenspunkte, kampfkraft);
+    }
+    
+     public int berechneKampfkraft() {
+        return kampfkraft;
     }
 
 }

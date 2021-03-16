@@ -8,28 +8,26 @@
 public class SpielerCharacter extends Spielfigur
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    protected String name;
-    protected int lebenspunkte;
+    protected double vermoegen;
 
     /**
      * Konstruktor für Objekte der Klasse SpielerCharacter
      */
-    public SpielerCharacter(int lebenspunkte, String name)
+    public SpielerCharacter(int lebenspunkte, String name, int kampfkraft, double vermoegen)
     {
         // Instanzvariable initialisieren
-        super();
-        this.name = "Walter";
-        this.lebenspunkte = 1;
-    }
-    public String getName(){
-        return name;
+        super(name, kampfkraft, lebenspunkte);
+        this.vermoegen = vermoegen;
     }
     
-    public void setLebensenpunkte(int lebenspunkte){
-        this.lebenspunkte = lebenspunkte;
+    public double getVermoegen()
+    {
+        return vermoegen;
     }
     
-    public int getLebenspunkte(){
-        return lebenspunkte;
+    public void setVermoegen(double neuesVermoegen)
+    {
+        this.vermoegen = neuesVermoegen;
     }
+ 
 }

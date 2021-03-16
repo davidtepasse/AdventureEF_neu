@@ -16,13 +16,13 @@ public class Schmied extends SpielerCharacter
     public Schmied()
     {
         // Instanzvariable initialisieren
-        super(100, "Schmieriger Schmied");
-        verbesserungskraft = 5;
+        super(100, "Schmieriger Schmied", 0, 10.25);
+        this.verbesserungskraft = 5;
     }
     
-    public Schmied(String name, int lebenspunkte, int verbesserungskraft)
+    public Schmied(String name, int lebenspunkte, double vermoegen, int verbesserungskraft)
     {
-        super(lebenspunkte, name);
+        super(lebenspunkte, name, 0, vermoegen);
         this.verbesserungskraft = 5; 
     }
    
